@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>menu</title>
+</head>	 
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+<header><img src="imgs/action/diner-logo.png" width="226" height="120" alt=""/><ul><a href="index.html"><li>HOME</li></a><a href="menu.html"><li class="active">MENU</li></a><li>CONTACT US</li><li>SUGGESTION BOX</li></ul><div id="basket"><img src="imgs/action/basket.png" width="392" height="394" alt=""/><div class="basketheader"><p>YOUR BASKET</p><div id="basketcounter"></div></div></div></header>
+	
+	<main id="mainmenu">
+	
+		<section id="wheretopick">
+		</section>
+		
+	  <section id="catagories">
+
+		</section>
+		
+		
+		<div class="menuflow"></div>
+							
+		
+		
+
+				<template class="template">
+			<div id="menucard" class="menucard" >
+			<div class="menucardimage"><img alt="foodimage">
+			</div>
+			<div class="menuitemheader"><h2>Name of Dish</h2></div>
+			<div class="menuitemshortdescription"><p>Short Description</p><!--</11><p><span id="dots"></span>-->
+			<p><span class="more">long descrition goes here</span></p><!--<p><span id="dots"></span><span id="more">Baltisk bondesuppe er en solid starter. Godt til dig, der skal drikke godt igennem under måltidet. Suppen består af ged, grønt og masser af løg.</span></p><button onclick="showmore1()" id="myBtn">Read more</button> -->
+			</div>
+			<div class="iconidentifiers"> 
+				<div class="veggetarian iconidentifiers"><img class="iconidentifier" alt=""></div>
+				<div class="stars">******</div>
+				<div class="alcohol"><p>Alcohol &nbsp;<span>number here</span>%</p></div>
+			</div>
+		
+			<div class="selectors"><button class="retractone">-</button>
+			<span class="amountchosen" type="text" value="1">1</span>
+			<button class="addone">+</button></div>
+			<div class="price"><p>Price: <span id="price1" value="79">Price go here</span> DKK</p></div>
+				<div class="discountprice"><p>Price: <span></span> DKK </p></div>
+			<div class="time"></div>
+			<button class="putinbasket">PUT IN BASKET</button>
+				</div>
+		</template>
+		
+		<template class="another"> <div class="catagorysort catagory"><div class="catagory"></div><div class="catagorybanner"><img class="catagorylogo" width="100" height="auto" alt=""/><h2 class="banner"></h2><p class="subbanner">A fun way to start the party</p></div><span></span></div> </template>
+		
+			
+	
+</main>
+	<script type="text/javascript" src="js.js"></script>
+
+</body>
+</html>
