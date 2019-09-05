@@ -685,4 +685,8 @@ display: none;
   border: 1px solid #7c1f17;
   margin: 1em;
   padding: 2em;
+position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(50%, 100%);
 }

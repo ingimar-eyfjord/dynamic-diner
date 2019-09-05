@@ -33,6 +33,7 @@ function showDish(dish){
 	copy.querySelector(".menucardimage img").src = `imgs/medium/${dish.image}-md.jpg`;
 	copy.querySelector(".alcohol span").textContent = dish.alcohol;
 	copy.querySelector(".price span").textContent = dish.price;
+	
 	function alcohol(){
 	if (dish.alcohol == 0){
 		copy.querySelector(".alcohol").style.display = "none"; }}
@@ -56,7 +57,29 @@ function showDish(dish){
 			copy.querySelector(".veggetarian img").src = `imgs/action/vegetarian-mark.png`;	
 		}}
 	vegetarian()
-	
+	//close the modal when clicked
+const modal = document.querySelector(".modal-background");
+modal.addEventListener("click", () => {
+  modal.classList.add("hide");
+});
+
+//our cloning function
+
+  //...
+  copy.querySelector(".putinbasket").addEventListener("click", () => {
+    fetch(`https://kea-alt-del.dk/t5/api/product?id=${dish.id}`)
+      .then(res => res.json())
+      .then(showDetails);
+  });
+
+console.log(showDetails)
+//once we have our data, ....
+function showDetails(data) {
+  modal.querySelector(".modal-name").textContent = data.name;
+  modal.querySelector(".modal-description").textContent = data.longdescription;
+  //...
+  modal.classList.remove("hide");
+}
 	
 		document.querySelector(`#${dish.category}`).appendChild(copy);}
 
