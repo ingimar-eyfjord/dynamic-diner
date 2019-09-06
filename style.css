@@ -334,6 +334,7 @@ border-style: none;transform: translateX(-10px)}
 	
 }
 
+
 .soldout:after{
 	background: url("imgs/action/sold-out.png") repeat;
 	background-size: 250px 250px;;
@@ -495,8 +496,8 @@ transform: translate(2.5em, 0.5em);}
 	align-self: flex-end;
 	margin-left: 10px;
 	margin-bottom: 10px;
-	width:3em;
-	height: auto;
+	width:auto;
+	height: 2em;
 }
 .active{
 	background-color: black;
